@@ -14,12 +14,17 @@ ESRI's Coronavirus COVID-19 Cases feature layer
 
 https://coronavirus-resources.esri.com/datasets/bbb2e4f589ba40d692fab712ae37b9ac
 
-
 ## Built with these open-source components
-- MRTK(Mixed Reality Toolkit)
+- MRTK(Mixed Reality Toolkit) (http://aka.ms/MRTK)
 - Unity3DGlobe (https://github.com/Dandarawy/Unity3D-Globe)
 - Moon and Earth (https://github.com/keijiro/MoonAndEarth)
 - SimpleJSON (https://github.com/Bunny83/SimpleJSON)
+
+## Features
+- Near interactions with direct grab/move/rotate (one or two-handed)
+- Far interactions using hand ray (one or two-handed)
+- Use hand menu to switch the data
+- Toggle graph, text label
 
 ## Known issues
 - There is flicker on data switching. Needs improvement on data retrieving
