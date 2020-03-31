@@ -6,7 +6,7 @@ Experimental COVID-19 Data Visualization for HoloLens 2 with MRTK. This project 
 ## Video
 https://youtu.be/rCNq40mOZ64
 
-## App package for HoloLens 2 (ARM)
+## App package for HoloLens 2 (ARM) and HoloLens 1st gen (x86)
 Download in Release page
 https://github.com/cre8ivepark/COVID19DataVisualizationHoloLens2/releases/tag/0.1
 
