@@ -1,4 +1,4 @@
-# COVID19DataVisualizationHoloLens2
+# COVID19 Data Visualization with HoloLens2 + MRTK
 Experimental COVID-19 Data Visualization for HoloLens 2 with MRTK
 ![20200330_231204_HoloLens](https://user-images.githubusercontent.com/13754172/78055611-a31a6400-7338-11ea-82e2-05987de9feeb.jpg)
 
