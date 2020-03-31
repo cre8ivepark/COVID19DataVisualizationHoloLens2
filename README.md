@@ -16,8 +16,8 @@ https://coronavirus-resources.esri.com/datasets/bbb2e4f589ba40d692fab712ae37b9ac
 ## Project
 Data Visualizer script contains the code for retrieving, parsing JSON data, and visualizing with graphs. Graph elements are added to GraphContainer and LabelContainer. CreateMeshes(int dataType) simply uses confirmed cases(0), recovered cases(1), fatal cases(2) to visualize specific data. Hand menu's Radio buttons calls CreateMeshes(0), CreateMeshes(1), CreateMeshes(2).
 ![2020-03-31 14_15_39-COVID19Visualizer4 - Microsoft Visual Studio](https://user-images.githubusercontent.com/13754172/78075917-3fa12e00-735a-11ea-9dad-4c92f2d81a80.png)
-
-Hand menu's toggle button shows & hides GraphContainer and LabelContainer. 
+<br/><br/>
+Hand menu's toggle button shows & hides GraphContainer and LabelContainer. <br/>
 ![2020-03-31 09_27_37-Unity 2018 4 12f1 Personal - COVID19HoloLens2 unity - COVIDDataVizGit - PC, Mac ](https://user-images.githubusercontent.com/13754172/78075934-44fe7880-735a-11ea-9309-3a34aa4c4666.png)
 ![2020-03-31 09_58_03-Unity 2018 4 12f1 Personal - COVID19HoloLens2 unity - COVIDDataVizGit - PC, Mac ](https://user-images.githubusercontent.com/13754172/78075949-4cbe1d00-735a-11ea-89bd-7192651ee959.png)
 ![2020-03-31 09_26_53-Unity 2018 4 12f1 Personal - COVID19HoloLens2 unity - COVIDDataVizGit - PC, Mac ](https://user-images.githubusercontent.com/13754172/78075958-5051a400-735a-11ea-85eb-84486f166dd4.png)
