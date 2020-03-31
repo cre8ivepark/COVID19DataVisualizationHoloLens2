@@ -1,5 +1,5 @@
 # COVID19DataVisualizationHoloLens2
-COVID-19 Data Visualization for HoloLens 2 with MRTK
+Experimental COVID-19 Data Visualization for HoloLens 2 with MRTK
 
 ## Video
 https://youtu.be/rCNq40mOZ64
