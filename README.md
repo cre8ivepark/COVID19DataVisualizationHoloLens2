@@ -21,7 +21,7 @@ https://coronavirus-resources.esri.com/datasets/bbb2e4f589ba40d692fab712ae37b9ac
 - Moon and Earth (https://github.com/keijiro/MoonAndEarth)
 - SimpleJSON (https://github.com/Bunny83/SimpleJSON)
 
-## Knwon issues
+## Known issues
 - There is flicker on data switching. Needs improvement on data retrieving
 - Data normalization & polish needed
 - Auto rotation is disabled. Graph orientation is distorted when the object is rotated.
