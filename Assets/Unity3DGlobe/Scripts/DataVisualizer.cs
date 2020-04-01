@@ -49,7 +49,7 @@ public class DataVisualizer : MonoBehaviour {
         //}
         featuresArray = N["features"].AsArray;
 
-        CreateMeshes(0); // Default start with Confirmed cases
+        CreateMeshes(COVIDDataType.Confirmed); // Default start with Confirmed cases
     }
 
     // Use this for initialization
@@ -63,7 +63,7 @@ public class DataVisualizer : MonoBehaviour {
 
     }
 
-    public void CreateMeshes(int dataType)
+    public void CreateMeshes(COVIDDataType dataType)
     {
         foreach (Transform child in GraphContainer.transform)
         {
@@ -107,13 +107,13 @@ public class DataVisualizer : MonoBehaviour {
 
             switch (dataType)
             {
-                case 0:                    
+                case COVIDDataType.Confirmed:                    
                     value = n_confirmed;
                     break;
-                case 1:
+                case COVIDDataType.Recovered:
                     value = n_recovered;
                     break;
-                case 2:
+                case COVIDDataType.Fatal:
                     value = n_deaths;
                     break;
             }
