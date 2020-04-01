@@ -192,6 +192,15 @@ public class DataVisualizer : MonoBehaviour {
         //textLabel.GetComponentInChildren<TextMesh>().SetActive(false);
         //textLabel.transform.localPosition += new Vector3(0.3f, 0.0f, 0.0f);
 
+        // Adding in second label to show city and case data in both directions.
+        GameObject p2 = Instantiate<GameObject>(textLabel);
+        p2.transform.parent = LabelContainer.transform;
+        p2.transform.localPosition = pos * 1.04f;
+        p2.transform.LookAt(pos * -3 + Earth.transform.position);
+        p2.transform.localRotation *= Quaternion.Euler(0, 90, 0);
+        TextMesh p2Text = p2.GetComponentInChildren<TextMesh>();
+        p2Text.transform.Rotate(0, 180, 0);
+        p2Text.anchor = TextAnchor.MiddleRight;
         int prevVertCount = meshVertices.Count;
 
         for (int k = 0; k < verts.Length; k++)
