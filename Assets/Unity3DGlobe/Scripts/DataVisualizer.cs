@@ -5,8 +5,7 @@ using SimpleJSON;
 using TMPro;
 using System;
 
-public class DataVisualizer : MonoBehaviour
-{
+public class DataVisualizer : MonoBehaviour {
     public Material PointMaterial;
     public Gradient Colors;
     public GameObject GraphContainer;
@@ -29,12 +28,11 @@ public class DataVisualizer : MonoBehaviour
     public float ValueScaleMultiplier = 0.00002f;
     private JSONArray featuresArray;
 
-    private GameObject[] seriesObjects;
-    private int currentSeries = 0;
+    GameObject[] seriesObjects;
+    int currentSeries = 0;
 
     // Data point information from ESRI https://coronavirus-resources.esri.com/datasets/bbb2e4f589ba40d692fab712ae37b9ac?fbclid=IwAR0R2dlui4wQoCsyp1CPUYXpM2iOJAA0Zro4uJmUm5US3TsH8y2UqnZlplU
     private const string URL = "https://services1.arcgis.com/0MSEUqKaxRlEPj5g/ArcGIS/rest/services/Coronavirus_2019_nCoV_Cases/FeatureServer/1/query?where=1%3D1&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=*&returnGeometry=true&featureEncoding=esriDefault&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnQueryGeometry=false&returnDistinctValues=false&cacheHint=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=pjson&token=";
-
     public IEnumerator LoadJSONDataFromWeb()
     {
         WWW www = new WWW(URL);
@@ -55,13 +53,14 @@ public class DataVisualizer : MonoBehaviour
     }
 
     // Use this for initialization
-    private void Start()
+    void Start()
     {
         this.StartCoroutine(LoadJSONDataFromWeb());
     }
 
     public void ShowTextLabel()
     {
+
     }
 
     public void CreateMeshes(int dataType)
@@ -79,7 +78,7 @@ public class DataVisualizer : MonoBehaviour
         nActiveTotal = 0;
         nRecoveredTotal = 0;
         nFatalTotal = 0;
-
+        
         seriesObjects = new GameObject[featuresArray.Count];
         GameObject p = Instantiate<GameObject>(PointPrefab);
         Vector3[] verts = p.GetComponent<MeshFilter>().mesh.vertices;
@@ -108,20 +107,19 @@ public class DataVisualizer : MonoBehaviour
 
             switch (dataType)
             {
-                case 0:
+                case 0:                    
                     value = n_confirmed;
                     break;
-
                 case 1:
                     value = n_recovered;
                     break;
-
                 case 2:
                     value = n_deaths;
                     break;
             }
 
-            if (featuresArray[i]["attributes"]["Province_State"].Value != "null")
+            
+            if(featuresArray[i]["attributes"]["Province_State"].Value != "null")
             {
                 locationName = featuresArray[i]["attributes"]["Province_State"].Value + "," + featuresArray[i]["attributes"]["Country_Region"].Value + "  " + value;
             }
@@ -130,7 +128,7 @@ public class DataVisualizer : MonoBehaviour
                 locationName = featuresArray[i]["attributes"]["Country_Region"].Value + "  " + value;
             }
 
-            Debug.Log("**Lat/Long/Conf = " + lat + "/" + lng + "/" + value + "/" + locationName);
+            Debug.Log("**Lat/Long/Conf = " + lat + "/" + lng +"/"+ value + "/" + locationName);
 
             AppendPointVertices(p, verts, indices, lng, lat, value, meshVertices, meshIndices, meshColors, locationName);
             if (meshVertices.Count + verts.Length > 65000)
@@ -151,10 +149,11 @@ public class DataVisualizer : MonoBehaviour
             nRecoveredTotal += n_recovered;
             nFatalTotal += n_deaths;
 
-            if (i == featuresArray.Count - 2)
+            if ( i == featuresArray.Count-2)
             {
                 timestamp = featuresArray[i]["attributes"]["Last_Update"].AsLong;
             }
+
         }
 
         seriesObjects[currentSeries].SetActive(true);
@@ -167,8 +166,7 @@ public class DataVisualizer : MonoBehaviour
 
         tmpTimeStamp.text = UnixTimeStampToDateTime(timestamp).ToString();
     }
-
-    private void AppendPointVertices(GameObject p, Vector3[] verts, int[] indices, float lng, float lat, float value, List<Vector3> meshVertices,
+    private void AppendPointVertices(GameObject p, Vector3[] verts, int[] indices, float lng,float lat,float value, List<Vector3> meshVertices,
     List<int> meshIndices,
     List<Color> meshColors,
     string locationName)
@@ -191,16 +189,6 @@ public class DataVisualizer : MonoBehaviour
         textLabel.transform.localPosition = pos * 1.04f;
         textLabel.transform.LookAt(pos * -3 + Earth.transform.position);
         textLabel.transform.localRotation *= Quaternion.Euler(0, 90, 0);
-
-        GameObject p2 = Instantiate<GameObject>(textLabel);
-        p2.transform.parent = LabelContainer.transform;
-        p2.transform.localPosition = pos * 1.04f;
-        p2.transform.LookAt(pos * -3 + Earth.transform.position);
-        p2.transform.localRotation *= Quaternion.Euler(0, 90, 0);
-        TextMesh p2Text = p2.GetComponentInChildren<TextMesh>();
-        p2Text.transform.Rotate(0, 180, 0);
-        p2Text.anchor = TextAnchor.MiddleRight;
-
         //textLabel.GetComponentInChildren<TextMesh>().SetActive(false);
         //textLabel.transform.localPosition += new Vector3(0.3f, 0.0f, 0.0f);
 
@@ -215,8 +203,9 @@ public class DataVisualizer : MonoBehaviour
         {
             meshIndices.Add(prevVertCount + indices[k]);
         }
-    }
 
+
+    }
     private void CreateObject(List<Vector3> meshertices, List<int> meshindecies, List<Color> meshColors, GameObject seriesObj, string locationName)
     {
         Mesh mesh = new Mesh();
@@ -229,7 +218,6 @@ public class DataVisualizer : MonoBehaviour
         obj.AddComponent<MeshRenderer>().material = PointMaterial;
         //obj.transform.parent = seriesObj.transform;
     }
-
     public void ActivateSeries(int seriesIndex)
     {
         if (seriesIndex >= 0 && seriesIndex < seriesObjects.Length)
@@ -237,6 +225,7 @@ public class DataVisualizer : MonoBehaviour
             seriesObjects[currentSeries].SetActive(false);
             currentSeries = seriesIndex;
             seriesObjects[currentSeries].SetActive(true);
+
         }
     }
 
@@ -246,8 +235,8 @@ public class DataVisualizer : MonoBehaviour
         dtDateTime = dtDateTime.AddMilliseconds(unixTimeStamp);
         return dtDateTime;
     }
-}
 
+}
 [System.Serializable]
 public class SeriesData
 {
