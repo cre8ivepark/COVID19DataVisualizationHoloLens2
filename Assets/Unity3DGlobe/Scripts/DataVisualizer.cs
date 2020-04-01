@@ -183,8 +183,6 @@ public class DataVisualizer : MonoBehaviour {
     List<Color> meshColors,
     string locationName, GameObject containerObject, bool createLabel)
     {
-        GameObject textLabel = Instantiate<GameObject>(TextPrefab);
-        textLabel.GetComponentInChildren<TextMesh>().text = locationName;
 
         Color valueColor = Colors.Evaluate(value * 0.00025f);
         Vector3 pos;
@@ -200,6 +198,8 @@ public class DataVisualizer : MonoBehaviour {
         // Text Label
         if(createLabel == true)
         {
+            GameObject textLabel = Instantiate<GameObject>(TextPrefab);
+            textLabel.GetComponentInChildren<TextMesh>().text = locationName;
             textLabel.transform.parent = LabelContainer.transform;
             textLabel.transform.localPosition = pos * 1.04f;
             textLabel.transform.LookAt(pos * -3 + Earth.transform.position);
