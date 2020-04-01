@@ -25,7 +25,7 @@ public class DataVisualizer : MonoBehaviour {
     private int nRecoveredTotal = 0;
     private int nFatalTotal = 0;
 
-    public float ValueScaleMultiplier = 0.00001f;
+    public float ValueScaleMultiplier = 0.00002f;
     private JSONArray featuresArray;
 
     GameObject[] seriesObjects;
@@ -182,7 +182,7 @@ public class DataVisualizer : MonoBehaviour {
         pos.z = 0.5f * Mathf.Sin((lng) * Mathf.Deg2Rad) * Mathf.Cos(lat * Mathf.Deg2Rad);
         p.transform.parent = GraphContainer.transform;
         p.transform.localPosition = pos;
-        p.transform.localScale = new Vector3(1, 1, Mathf.Max(0.000001f, value * 0.00025f));
+        p.transform.localScale = new Vector3(1, 1, Mathf.Max(0.00001f, value * ValueScaleMultiplier));
         //        p.transform.LookAt(pos * 2);
         p.transform.LookAt(pos * 2 + Earth.transform.position); // TODO: Adjust rotation when the object has been manipulated.
         textLabel.transform.parent = LabelContainer.transform;
