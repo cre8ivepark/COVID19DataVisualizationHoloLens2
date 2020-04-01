@@ -56,4 +56,4 @@ Material:
     m_Colors:
     - _Fill_Color_: {r: 0.15294118, g: 0.27058825, b: 0.5372549, a: 1}
     - _Line_Color_: {r: 0.5882353, g: 0.84313726, b: 1, a: 1}
-    - _Pulse_Origin_: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - _Pulse_Origin_: {r: 0.8, g: 0.8, b: 0, a: 0}
