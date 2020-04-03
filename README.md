@@ -8,7 +8,7 @@ https://youtu.be/zBkNlpGHwZQ
 
 ## App package for HoloLens 2 (ARM) and HoloLens 1st gen (x86)
 Download in Release page
-https://github.com/cre8ivepark/COVID19DataVisualizationHoloLens2/releases/tag/0.1
+https://github.com/cre8ivepark/COVID19DataVisualizationHoloLens2/releases
 
 ## Data source
 ESRI's Coronavirus COVID-19 Cases feature layer<br/>
@@ -18,10 +18,23 @@ https://coronavirus-resources.esri.com/datasets/bbb2e4f589ba40d692fab712ae37b9ac
 Data Visualizer script contains the code for retrieving, parsing JSON data, and visualizing with graphs. Graph elements are added to GraphContainer and LabelContainer. CreateMeshes(int dataType) simply uses confirmed cases(0), recovered cases(1), fatal cases(2) to visualize specific data. Hand menu's Radio buttons calls CreateMeshes(0), CreateMeshes(1), CreateMeshes(2).
 ![2020-03-31 14_15_39-COVID19Visualizer4 - Microsoft Visual Studio](https://user-images.githubusercontent.com/13754172/78075917-3fa12e00-735a-11ea-9dad-4c92f2d81a80.png)
 <br/><br/>
-Hand menu's toggle button shows & hides GraphContainer and LabelContainer. <br/>
-![2020-03-31 09_27_37-Unity 2018 4 12f1 Personal - COVID19HoloLens2 unity - COVIDDataVizGit - PC, Mac ](https://user-images.githubusercontent.com/13754172/78075934-44fe7880-735a-11ea-9309-3a34aa4c4666.png)
+Menu stays around the user with tag-along behavior which is provided by MRTK's RadialView solver. Using the pin button, you can toggle tag-along behavior. Menu's backplate can be grabbed and moved. Grabbing and moving menu automatically disables the tag-along and makes the menu world-locked. 
+
+Menu's toggle button shows & hides GraphContainer and LabelContainer. 
+Use slider UI for configuring the earth rendering options.
+- Earth color saturation level
+- Cloud opacity
+- Sea color saturation level
+<br/><br/>
+<img src="https://user-images.githubusercontent.com/13754172/78325218-df61e600-752b-11ea-8dd5-7f0fd2a08d44.png" width="500px">
+
 ![2020-03-31 09_58_03-Unity 2018 4 12f1 Personal - COVID19HoloLens2 unity - COVIDDataVizGit - PC, Mac ](https://user-images.githubusercontent.com/13754172/78075949-4cbe1d00-735a-11ea-89bd-7192651ee959.png)
-![2020-03-31 09_26_53-Unity 2018 4 12f1 Personal - COVID19HoloLens2 unity - COVIDDataVizGit - PC, Mac ](https://user-images.githubusercontent.com/13754172/78075958-5051a400-735a-11ea-85eb-84486f166dd4.png)
+![2020-04-02 18_35_52-Unity 2018 4 12f1 Personal - COVID19HoloLens2 unity - COVIDDataVizGit - Universa](https://user-images.githubusercontent.com/13754172/78325172-c22d1780-752b-11ea-8f6d-edd013376b3c.png)
+
+## Build and deploy
+Please make sure to use 'Single Pass' (not Single Pass Instanced) to render graph properly on the device.
+![2020-04-02 21_46_58-Unity 2018 4 12f1 Personal - COVID19HoloLens2 unity - COVIDDataVizGit - Universa](https://user-images.githubusercontent.com/13754172/78325429-644cff80-752c-11ea-88db-c9102c5f3528.png)
+
 
 
 ## Built with these open-source components
