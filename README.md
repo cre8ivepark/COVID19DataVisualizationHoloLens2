@@ -28,6 +28,11 @@ Use slider UI for configuring the earth rendering options
 ![2020-03-31 09_58_03-Unity 2018 4 12f1 Personal - COVID19HoloLens2 unity - COVIDDataVizGit - PC, Mac ](https://user-images.githubusercontent.com/13754172/78075949-4cbe1d00-735a-11ea-89bd-7192651ee959.png)
 ![2020-04-02 18_35_52-Unity 2018 4 12f1 Personal - COVID19HoloLens2 unity - COVIDDataVizGit - Universa](https://user-images.githubusercontent.com/13754172/78325172-c22d1780-752b-11ea-8f6d-edd013376b3c.png)
 
+## Build and deploy
+Please make sure to use 'Single Pass' (not Single Pass Instanced) to render graph properly on the device.
+![2020-04-02 21_46_58-Unity 2018 4 12f1 Personal - COVID19HoloLens2 unity - COVIDDataVizGit - Universa](https://user-images.githubusercontent.com/13754172/78325429-644cff80-752c-11ea-88db-c9102c5f3528.png)
+
+
 
 ## Built with these open-source components
 - MRTK(Mixed Reality Toolkit) (http://aka.ms/MRTK)
