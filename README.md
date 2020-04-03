@@ -8,7 +8,7 @@ https://youtu.be/zBkNlpGHwZQ
 
 ## App package for HoloLens 2 (ARM) and HoloLens 1st gen (x86)
 Download in Release page
-https://github.com/cre8ivepark/COVID19DataVisualizationHoloLens2/releases/tag/0.1
+https://github.com/cre8ivepark/COVID19DataVisualizationHoloLens2/releases
 
 ## Data source
 ESRI's Coronavirus COVID-19 Cases feature layer<br/>
