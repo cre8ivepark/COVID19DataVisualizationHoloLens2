@@ -23,7 +23,8 @@ Use slider UI for configuring the earth rendering options
 - Earth color saturation level
 - Cloud opacity
 - Sea color saturation level
-![2020-04-02 11_26_46-Unity 2018 4 12f1 Personal - COVID19HoloLens2 unity - COVIDDataVizGit - Universa](https://user-images.githubusercontent.com/13754172/78325218-df61e600-752b-11ea-8dd5-7f0fd2a08d44.png)
+<br/><br/>
+<img src="https://user-images.githubusercontent.com/13754172/78325218-df61e600-752b-11ea-8dd5-7f0fd2a08d44.png" width="500px">
 
 ![2020-03-31 09_58_03-Unity 2018 4 12f1 Personal - COVID19HoloLens2 unity - COVIDDataVizGit - PC, Mac ](https://user-images.githubusercontent.com/13754172/78075949-4cbe1d00-735a-11ea-89bd-7192651ee959.png)
 ![2020-04-02 18_35_52-Unity 2018 4 12f1 Personal - COVID19HoloLens2 unity - COVIDDataVizGit - Universa](https://user-images.githubusercontent.com/13754172/78325172-c22d1780-752b-11ea-8f6d-edd013376b3c.png)
