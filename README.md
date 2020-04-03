@@ -18,8 +18,10 @@ https://coronavirus-resources.esri.com/datasets/bbb2e4f589ba40d692fab712ae37b9ac
 Data Visualizer script contains the code for retrieving, parsing JSON data, and visualizing with graphs. Graph elements are added to GraphContainer and LabelContainer. CreateMeshes(int dataType) simply uses confirmed cases(0), recovered cases(1), fatal cases(2) to visualize specific data. Hand menu's Radio buttons calls CreateMeshes(0), CreateMeshes(1), CreateMeshes(2).
 ![2020-03-31 14_15_39-COVID19Visualizer4 - Microsoft Visual Studio](https://user-images.githubusercontent.com/13754172/78075917-3fa12e00-735a-11ea-9dad-4c92f2d81a80.png)
 <br/><br/>
-Menu's toggle button shows & hides GraphContainer and LabelContainer. <br/>
-Use slider UI for configuring the earth rendering options
+Menu stays around the user with tag-along behavior which is provided by MRTK's RadialView solver. Using the pin button, you can toggle tag-along behavior. Menu's backplate can be grabbed and moved. Grabbing and moving menu automatically disables the tag-along and makes the menu world-locked. 
+
+Menu's toggle button shows & hides GraphContainer and LabelContainer. 
+Use slider UI for configuring the earth rendering options.
 - Earth color saturation level
 - Cloud opacity
 - Sea color saturation level
