@@ -2,6 +2,7 @@
 Experimental COVID-19 Data Visualization for HoloLens 2 with MRTK. This project explores how volumetric data can be represented in physical space with direct hand-tracking inputs in mixed reality using HoloLens 2. It is based on Microsoft's [MRTK(Microsoft's Mixed Reality Toolkit)](https://github.com/microsoft/MixedRealityToolkit-Unity)<br/> The project works with HoloLens 1st gen as well. (use static menu instead of hand menu)<br/>
 
 ![20200330_231204_HoloLens](https://user-images.githubusercontent.com/13754172/78055611-a31a6400-7338-11ea-82e2-05987de9feeb.jpg)
+![COVID_HL2_0405B](https://user-images.githubusercontent.com/13754172/78509640-51ad1300-7744-11ea-8603-1e2d446f76d3.gif)
 
 ## Video
 https://youtu.be/zBkNlpGHwZQ
