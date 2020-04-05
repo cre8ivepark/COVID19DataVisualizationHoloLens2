@@ -193,7 +193,7 @@ public class DataVisualizer : MonoBehaviour {
         p.transform.localPosition = pos;
         p.transform.localScale = new Vector3(1, 1, Mathf.Max(0.00001f, value * ValueScaleMultiplier));
         //        p.transform.LookAt(pos * 2);
-        p.transform.LookAt(pos * 2 + Earth.transform.position); // TODO: Adjust rotation when the object has been manipulated.
+        p.transform.LookAt(pos * 2 + Earth.transform.position); 
 
         // Text Label
         if(createLabel == true)

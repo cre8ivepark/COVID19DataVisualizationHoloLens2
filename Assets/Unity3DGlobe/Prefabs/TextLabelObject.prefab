@@ -116,6 +116,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4754362585085117073}
     m_Modifications:
+    - target: {fileID: 1000013198843976, guid: f6038dfbe1e1bd14dac07b1405ccda54, type: 3}
+      propertyPath: m_Name
+      value: 3DTextSelawikBold
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010330146594, guid: f6038dfbe1e1bd14dac07b1405ccda54, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -160,10 +164,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1000013198843976, guid: f6038dfbe1e1bd14dac07b1405ccda54, type: 3}
-      propertyPath: m_Name
-      value: 3DTextSelawikBold
-      objectReference: {fileID: 0}
     - target: {fileID: 23000013318538408, guid: f6038dfbe1e1bd14dac07b1405ccda54,
         type: 3}
       propertyPath: m_Enabled
@@ -182,7 +182,7 @@ PrefabInstance:
     - target: {fileID: 102000010767390410, guid: f6038dfbe1e1bd14dac07b1405ccda54,
         type: 3}
       propertyPath: m_FontSize
-      value: 26
+      value: 24
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6038dfbe1e1bd14dac07b1405ccda54, type: 3}
