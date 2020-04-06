@@ -16,7 +16,7 @@ ESRI's Coronavirus COVID-19 Cases feature layer<br/>
 https://coronavirus-resources.esri.com/datasets/bbb2e4f589ba40d692fab712ae37b9ac
 
 ## Project
-Data Visualizer script contains the code for retrieving, parsing JSON data, and visualizing with graphs. Graph elements are added to GraphContainer and LabelContainer. CreateMeshes(int dataType) simply uses confirmed cases(0), recovered cases(1), fatal cases(2) to visualize specific data. Hand menu's Radio buttons calls CreateMeshes(0), CreateMeshes(1), CreateMeshes(2).
+**DataVisualizer.cs** script contains the code for retrieving, parsing JSON data, and visualizing with graphs. Graph elements are added to GraphContainerConfirmed, GraphContainerRecovered, GraphContainerFatal, and LabelContainer. CreateMeshes() creates the graph for three data values and text label. Main menu's Radio buttons simply show/hide GraphContainer objects.
 ![2020-03-31 14_15_39-COVID19Visualizer4 - Microsoft Visual Studio](https://user-images.githubusercontent.com/13754172/78075917-3fa12e00-735a-11ea-9dad-4c92f2d81a80.png)
 <br/><br/>
 Menu stays around the user with tag-along behavior which is provided by MRTK's RadialView solver. Using the pin button, you can toggle tag-along behavior. Menu's backplate can be grabbed and moved. Grabbing and moving menu automatically disables the tag-along and makes the menu world-locked. 
