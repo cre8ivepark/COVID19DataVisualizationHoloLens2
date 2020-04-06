@@ -39,8 +39,6 @@ Use slider UI for configuring the earth rendering options.
 Please make sure to use 'Single Pass' (not Single Pass Instanced) to render graph properly on the device.
 ![2020-04-02 21_46_58-Unity 2018 4 12f1 Personal - COVID19HoloLens2 unity - COVIDDataVizGit - Universa](https://user-images.githubusercontent.com/13754172/78325429-644cff80-752c-11ea-88db-c9102c5f3528.png)
 
-
-
 ## Built with these open-source components
 - MRTK(Mixed Reality Toolkit) (http://aka.ms/MRTK)
 - Unity3DGlobe (https://github.com/Dandarawy/Unity3D-Globe)
@@ -50,10 +48,10 @@ Please make sure to use 'Single Pass' (not Single Pass Instanced) to render grap
 ## Features
 - Near interactions with direct grab/move/rotate (one or two-handed)
 - Far interactions using hand ray (one or two-handed)
-- Use hand menu to switch the data
+- Main menu to switch the data, change earth rendering options
 - Toggle graph, text label
+- Toggle auto-rotate 
 
 ## Known issues
 - There is flicker on data switching. Needs improvement on data retrieving
 - Data normalization & polish needed
-- Auto rotation is disabled. Graph orientation is distorted when the object is rotated.
