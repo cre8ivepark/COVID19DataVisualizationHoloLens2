@@ -55,8 +55,8 @@ Please make sure to use 'Single Pass' (not Single Pass Instanced) to render grap
 - Toggle auto-rotate 
 
 ## Known issues
-- There is flicker on data switching. Needs improvement on data retrieving
 - Data normalization & polish needed
+- Sometimes two-handed manipulation makes the globe tiny and not properly scalable. Use hand-ray to make it bigger again.
 
 ![MadeWithMRTK_1920x](https://user-images.githubusercontent.com/13754172/78519812-47f1d280-7779-11ea-9fdd-7bbdb7b4f9f5.png)
 
