@@ -165,10 +165,10 @@ public class DataVisualizer : MonoBehaviour {
         Destroy(p);
 
         // Assigning total numbers to Text Mesh Pro labels
-        tmpConfirmedTotal.text = nConfirmedTotal.ToString();
-        tmpRecoveredTotal.text = nRecoveredTotal.ToString();
-        tmpFatalTotal.text = nFatalTotal.ToString();
-        tmpActiveTotal.text = (nConfirmedTotal - nRecoveredTotal).ToString();
+        tmpConfirmedTotal.text = nConfirmedTotal.ToString("N0");
+        tmpRecoveredTotal.text = nRecoveredTotal.ToString("N0");
+        tmpFatalTotal.text = nFatalTotal.ToString("N0");
+        tmpActiveTotal.text = (nConfirmedTotal - nRecoveredTotal).ToString("N0");
 
         tmpTimeStamp.text = UnixTimeStampToDateTime(timestamp).ToString();
 
