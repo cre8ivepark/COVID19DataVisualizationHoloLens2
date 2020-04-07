@@ -7,9 +7,11 @@ Experimental COVID-19 Data Visualization for HoloLens 2 with MRTK. This project 
 ## Video (Updated 4/5/2020)
 https://youtu.be/mN7VM2h41_w
 
-## App package for HoloLens 2 (ARM) and HoloLens 1st gen (x86)
-Download in Release page
-https://github.com/cre8ivepark/COVID19DataVisualizationHoloLens2/releases
+## App for HoloLens 1st gen and HoloLens 2
+**Now you can download the app from Microsoft Store in your HoloLens 1 and HoloLens 2.**
+Use search box. (COVID-19 Data Visualization)
+![20200407_082550_HoloLens](https://user-images.githubusercontent.com/13754172/78689857-a4550f00-78ab-11ea-8eff-b3a2de6e2c3c.png)
+
 
 ## Data source
 ESRI's Coronavirus COVID-19 Cases feature layer<br/>
@@ -53,8 +55,8 @@ Please make sure to use 'Single Pass' (not Single Pass Instanced) to render grap
 - Toggle auto-rotate 
 
 ## Known issues
-- There is flicker on data switching. Needs improvement on data retrieving
 - Data normalization & polish needed
+- Sometimes two-handed manipulation makes the globe tiny and not properly scalable. Use hand-ray to make it bigger again.
 
 ![MadeWithMRTK_1920x](https://user-images.githubusercontent.com/13754172/78519812-47f1d280-7779-11ea-9fdd-7bbdb7b4f9f5.png)
 
