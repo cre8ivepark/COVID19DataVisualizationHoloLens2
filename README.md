@@ -12,6 +12,7 @@ https://youtu.be/mN7VM2h41_w
 Due to Microsoft Store's policy, you need to directly type in this URL in the Edge browser to open Store page and download the app.
 
 URL: **https://cutt.ly/covid19mr**
+
 The app title is 'COVID-19 Data Visualization'
 
 ## Data source
