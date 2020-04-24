@@ -62,3 +62,6 @@ Please make sure to use 'Single Pass' (not Single Pass Instanced) to render grap
 
 ![MadeWithMRTK_1920x](https://user-images.githubusercontent.com/13754172/78519812-47f1d280-7779-11ea-9fdd-7bbdb7b4f9f5.png)
 
+## Disclaimer
+*I work at Microsoft as a User Experience Designer. This project is my personal project. All experiments and related opinions are my own.
+
