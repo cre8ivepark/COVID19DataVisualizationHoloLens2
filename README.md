@@ -7,14 +7,6 @@ Experimental COVID-19 Data Visualization for HoloLens 2 with MRTK. This project 
 ## Video (Updated 4/5/2020)
 https://youtu.be/mN7VM2h41_w
 
-## App for HoloLens 1st gen and HoloLens 2
-**Now you can download the app from Microsoft Store in your HoloLens 1 and HoloLens 2.**
-Due to Microsoft Store's policy, you need to directly type in this URL in the Edge browser to open Store page and download the app.
-
-URL: **https://cutt.ly/covid19mr**
-
-The app title is 'COVID-19 Data Visualization'
-
 ## Data source
 ESRI's Coronavirus COVID-19 Cases feature layer<br/>
 https://coronavirus-resources.esri.com/datasets/bbb2e4f589ba40d692fab712ae37b9ac
